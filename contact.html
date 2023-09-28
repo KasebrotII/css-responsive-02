@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+          PROJECT 2
+          Author: Sheldon Wardell
+          Date: Oct 26 2022
+
+          Filename:  contact.html
+         -->
+
+   <title>Project 2</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+    <div class="container">
+<header>
+  <img src="images/gp_logo.png" alt="Golden Pulp">
+</header>
+
+<nav class="navbar">
+  <ul>
+      <li><a  class="brand" href="index.html">GoldenPulps</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Comic Books</a></li>
+      <li><a href="sneakpeek.html">Sneak Peek</a></li>
+      <li><a href="#">Artists</a></li>
+      <li><a href="writers.html">Writers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+<main>
+   <section>
+      <h1>Contact Us</h1>
+
+      <p id="legend">- required fields</p>
+      <form id="multipleForm" method="post"
+            action="http://itins3.madisoncollege.edu/echo.php">
+
+            <div>
+              <label class="required" for="firstName">First Name</label>
+              <input type="text"
+                     id="firstName"
+                     placeholder="First Name"
+                     name="firstName"
+                     pattern="[A-Z]{1}[a-zA-z]{0,25}"
+                     title="Must start with a capital letter. No numbers. Up to 25 characters."
+                     required>
+            </div>
+              <br>
+
+            <div>
+              <label class="required" for="lastName">Last Name</label>
+              <input type="text"
+                     id="lastName"
+                     placeholder="Last Name"
+                     name="lastName"
+                     pattern="[A-Z]{1}[a-zA-z]{0,25}"
+                     title="Must start with a capital letter. No numbers. Up to 25 characters."
+                     required>
+            </div>
+              <br>
+
+            <div>
+              <label class="required" for="email">Email</label>
+              <input type="email"
+                     id="email"
+                     placeholder="Example@Example.com"
+                     name="email"
+                     required>
+            </div>
+              <br>
+
+            <div>
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel"
+                     id="phoneNumber"
+                     placeholder="999-999-999"
+                     name="phoneNumber"
+                     pattern="[\d]{3}[-][\d]{3}[-][\d]{4}"
+                     title="Must be in ###-###-#### format.">
+            </div>
+              <br>
+
+            <div>
+              <label for="phoneType">Phone Type</label><br>
+              <input type="radio"
+                     id="phoneType"
+                     name="phoneType"
+                     value="Home"> Home<br>
+              <input type="radio"
+                     name="phoneType"
+                     value="Cell"> Cell<br>
+              <input type="radio"
+                     name="phoneType"
+                     value="Work"> Work
+            </div>
+              <br>
+
+            <div>
+              <label for="infoRequest">Information Requesting</label><br>
+              <input type="checkbox" id="infoRequest" name="Collections" value="Collections"> Collections<br>
+              <input type="checkbox" name="Trade-Ins" value="Trade-Ins"> Trade-Ins<br>
+              <input type="checkbox" name="AddToMailing" value="Add To Mailing"> Add To Mailing
+            </div>
+              <br>
+
+            <div>
+              <button type="submit" value="Send Message">Submit</button>
+              <button type="reset" value="Clear Form">Clear</button>
+            </div>
+      </form>
+
+   </section>
+</main>
+
+<footer>
+  <p>Golden Pulps: A Comic Book Resource for Collectors and Fans</p>
+</footer>
+    </div>
+</body>
+</html>
